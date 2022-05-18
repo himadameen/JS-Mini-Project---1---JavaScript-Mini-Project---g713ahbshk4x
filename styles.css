@@ -1,1 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+}
+.container{
+    width: 60%;
+    height: 90%;
+    margin: 5vh auto auto auto;
+    border: 1px solid black;    
+    border-radius: 5px;
+    box-shadow: 0 0 5px burlywood;
+}
+.title{
+    height: 9%;
+    display: block;
+    text-align: center;
+    background-color: slategray;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 2.5rem;
+}
+
+.game_container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25% 25%;
+    height: 80%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.game_container .jerry img .jerry2 img{
+    display: block;
+}
+.game_container .block img{    
+    display: none;
+}
+
+
 

@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack a mole game!!</title>
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
 
+        <div class="game_container">
+            <div class="title">Catch the jerry</div>
+            <div class="block" id="1"><img src="./jerry.png"/></div>
+            <div class="block" id="2"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="3"><img src="./jerry.png"/></div>
+            <div class="block" id="4"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="5"><img src="./jerry.png"/></div>
+            <div class="block" id="6"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="7"><img src="./jerry.png"/></div>
+            <div class="block" id="8"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="9"><img src="./jerry.png"/></div>
+            <div class="block" id="10"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="11"><img src="./jerry.png"/></div>
+            <div class="block" id="12"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="13"><img src="./jerry.png"/></div>
+            <div class="block" id="14"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="15"><img src="./jerry.png"/></div>
+            <div class="block" id="16"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="17"><img src="./jerry.png"/></div>
+            <div class="block" id="18"><img src="./jerry2.jpg"/></div>
+            <div class="block" id="19"><img src="./jerry.png"/></div>
+            <div class="block" id="20"><img src="./jerry2.jpg"/></div>
+        </div>
+        
+        <div class="result_container">
+            <div class="score">Score: <span id="yourscore">0</span></div>
+            <div class="timer_left">Timer-Left: <span id="timer">--</span></div>
+        </div>
+
+        <div class="controls">
+            <div class="speed_box">
+                <select id="game_speed">
+                    <option value="1000">Slow</option>
+                    <option value="750">Medium</option>
+                    <option value="500">Hard</option>
+                    <i class="fas fa-chevron-circle-down"></i>
+                </select>
+            </div>
+            <div id="play"><p id="play_txt">Start Game</p></div>
+
+            <div class="duration">
+                <select id="dur_game">
+                    <option value="10">10s</option>
+                    <option value="15">15s</option>
+                    <option value="30">30s</option>
+                    <i class="fas fa-chevron-circle-down"></i>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="./App.js"></script>
+</body>
+</html>
