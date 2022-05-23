@@ -2,50 +2,146 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10px;
 }
 body{
     width: 100%;
     height: 80vh;
     margin: 0;
+    background-image: url("https://ak6.picdn.net/shutterstock/videos/30577486/thumb/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+.container *{
+    outline: 0px solid black;   
+}
+
 .container{
     width: 60%;
     height: 90%;
     margin: 5vh auto auto auto;
     border: 1px solid black;    
     border-radius: 5px;
-    box-shadow: 0 0 5px burlywood;
+    box-shadow: 0 0 5px #2F8F9D;
 }
+
 .title{
-    height: 9%;
+    height: 10%;
     display: block;
     text-align: center;
-    background-color: slategray;
+    background-color: #2E0249;
     color: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-style: oblique;
+    letter-spacing: 1rem;
 }
 
 .game_container{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25% 25%;
     height: 80%;
+    display: grid;   
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:  25% 25% 25% 25%;
+    grid-gap: 0rem;
 }
-img{
-    width: 100%;
-    height: 100%;
+
+.block{
+    outline: 0.5px solid #2F8F9D;
 }
-.game_container .jerry img .jerry2 img{
-    display: block;
-}
-.game_container .block img{    
+
+.block img{    
     display: none;
 }
 
+.jerry, .jerry2 img{    
+    display: block;
+}
+
+img{    
+    width: 100%;
+    height: 100%;
+}
+
+.result_container{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #192a56;
+    color: #fff;
+}
+
+.score, .timer_left{
+    align-self: center;
+    flex: 1;
+}
+
+
+.controls{
+    margin-top: 1rem;
+    width: 100%;    
+    height: 3.5rem;
+    font-size: 2rem;
+    background-color: #060652;
+    border: 0.5px solid #2F8F9D;
+    color: #fff; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#play{
+    flex:2;
+}
+
+#play_txt{
+    margin-top: 0.55rem;
+    text-align: center;
+    letter-spacing: 0.125em;
+}
+
+#play:hover{
+    background-color: #2F8F9D;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.speed_box{
+    padding-top: 0.55rem;
+    background-color: #066163;
+    flex:1;
+    text-align: center;
+}
+
+.duration{
+    padding-top: 0.55rem;
+    background-color: #446A46;  ;
+    flex:1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.duration #dur_game{
+    font-size: x-large;
+    background-color: #79DAE8;
+    /* color: white;             */
+    padding: 0;
+    margin: 0;
+    padding-left: 0.1rem;
+  } 
+
+  .speed_box #game_speed{
+    font-size: x-large;
+    background-color: #79DAE8;            
+    padding: 0;
+    margin: 0;
+    padding-left: 0.1rem;
+  } 
+  
 
 
