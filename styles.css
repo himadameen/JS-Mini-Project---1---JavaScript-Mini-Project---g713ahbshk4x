@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 80vh;
     margin: 0;
@@ -13,20 +14,20 @@ body{
     background-size: cover;
 }
 
-.container *{
-    outline: 0px solid black;   
+.container * {
+    outline: 0px solid black;
 }
 
-.container{
+.container {
     width: 60%;
     height: 90%;
     margin: 5vh auto auto auto;
-    border: 1px solid black;    
+    border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 0 5px #2F8F9D;
 }
 
-.title{
+.title {
     height: 10%;
     display: block;
     text-align: center;
@@ -40,32 +41,33 @@ body{
     letter-spacing: 1rem;
 }
 
-.game_container{
+.game_container {
     height: 80%;
-    display: grid;   
+    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows:  25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
     grid-gap: 0rem;
 }
 
-.block{
+.block {
     outline: 0.5px solid #2F8F9D;
 }
 
-.block img{    
+.block img {
     display: none;
 }
 
-.jerry, .jerry2 img{    
+.jerry,
+.jerry2 img {
     display: block;
 }
 
-img{    
+img {
     width: 100%;
     height: 100%;
 }
 
-.result_container{
+.result_container {
     height: 10%;
     display: flex;
     flex-direction: row;
@@ -76,72 +78,72 @@ img{
     color: #fff;
 }
 
-.score, .timer_left{
+.score,
+.timer_left {
     align-self: center;
     flex: 1;
 }
 
 
-.controls{
+.controls {
     margin-top: 1rem;
-    width: 100%;    
+    width: 100%;
     height: 3.5rem;
     font-size: 2rem;
     background-color: #060652;
     border: 0.5px solid #2F8F9D;
-    color: #fff; 
+    color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#play{
-    flex:2;
+#play {
+    flex: 2;
 }
 
-#play_txt{
+#play_txt {
     margin-top: 0.55rem;
     text-align: center;
     letter-spacing: 0.125em;
 }
 
-#play:hover{
+#play:hover {
     background-color: #2F8F9D;
     font-weight: 600;
     cursor: pointer;
 }
 
-.speed_box{
+.speed_box {
     padding-top: 0.55rem;
     background-color: #066163;
-    flex:1;
+    flex: 1;
     text-align: center;
 }
 
-.duration{
+.duration {
     padding-top: 0.55rem;
-    background-color: #446A46;  ;
-    flex:1;
+    background-color: #446A46;
+    ;
+    flex: 1;
     text-align: center;
     cursor: pointer;
 }
 
-.duration #dur_game{
+.duration #dur_game {
     font-size: x-large;
     background-color: #79DAE8;
     /* color: white;             */
     padding: 0;
     margin: 0;
     padding-left: 0.1rem;
-  } 
+}
 
-  .speed_box #game_speed{
+.speed_box #game_speed {
     font-size: x-large;
-    background-color: #79DAE8;            
+    background-color: #79DAE8;
     padding: 0;
     margin: 0;
     padding-left: 0.1rem;
-  } 
-  
-
+}
 
