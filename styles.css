@@ -14,11 +14,13 @@ body {
     background-size: cover;
 }
 
-.container * {
+.containerr * {
     outline: 0px solid black;
+    /* outline: none; */
+    /* border: none; */
 }
 
-.container {
+.containerr {
     width: 60%;
     height: 90%;
     margin: 5vh auto auto auto;
@@ -85,7 +87,7 @@ img {
 }
 
 
-.controls {
+.controlss {
     margin-top: 1rem;
     width: 100%;
     height: 3.5rem;
@@ -103,7 +105,6 @@ img {
 }
 
 #play_txt {
-    margin-top: 0.55rem;
     text-align: center;
     letter-spacing: 0.125em;
 }
@@ -115,16 +116,13 @@ img {
 }
 
 .speed_box {
-    padding-top: 0.55rem;
     background-color: #066163;
     flex: 1;
     text-align: center;
 }
 
 .duration {
-    padding-top: 0.55rem;
     background-color: #446A46;
-    ;
     flex: 1;
     text-align: center;
     cursor: pointer;
@@ -132,8 +130,7 @@ img {
 
 .duration #dur_game {
     font-size: x-large;
-    background-color: #79DAE8;
-    /* color: white;             */
+    background-color: #79DAE8;     
     padding: 0;
     margin: 0;
     padding-left: 0.1rem;
@@ -147,3 +144,20 @@ img {
     padding-left: 0.1rem;
 }
 
+
+h5{
+    color: #2E0249;
+    font-size: xx-large;
+}
+
+.modal-body{
+    background-color: lightcyan;
+    color: black;
+    font-size: larger;
+    font-weight: 800 bold;
+}
+
+.closing{
+    color: black;
+    background-color: #79DAE8;
+}

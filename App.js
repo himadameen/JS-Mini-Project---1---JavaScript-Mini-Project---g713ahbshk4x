@@ -1,6 +1,9 @@
 
 var startButton = document.querySelector('#play');
 var gameStatus = "on";
+const ms = document.querySelector("#modalscore");
+const modal = document.querySelector(".modal");
+const close = document.querySelector(".closing");
 
 startButton.addEventListener('click', () => {
     if (gameStatus == "on") {
@@ -45,10 +48,11 @@ function playGame() {
         timer_html.textContent = timeLeft;
         timeLeft--;
 
-        // document.body.background = "grey";    
-        if (timeLeft == 0){
-            alert("your score is " + score);
+        if (timeLeft === -1){
+            modal.style.display = "block";
+            ms.innerText = "Score : " + score;
         }
+
     }, 1000);
 
     function popJerry(randomBLockNo) {
@@ -86,6 +90,9 @@ function playGame() {
     
 }
 
+close.addEventListener('click' , () => {
+    modal.style.display = "none";
+})
 
 
 
