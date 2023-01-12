@@ -11,4 +11,5 @@ Whack A mole !!
 > For extra process decided to keep some level and time to get the users or players to keep their excitement during the game.
 > And PLaying with the some colors with some extra attributes to look good to the user.
 > In future, it can be created with extra design and structures.. ex: Modal,Gif,own image etc.,
-> So, that's the simple "Whack a mole game" has created.   
+> So, that's the simple "Whack a mole game" has created. 
+Hosting Link : molegamer.netlify.app
